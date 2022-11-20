@@ -1,6 +1,6 @@
 const Home = async (req, res) => {
   try {
-    return res.send("Home OK");
+    return res.render("index");
   } catch (err) {
     return res.status(500).send(`Erro ${err}`);
   }

@@ -1,0 +1,12 @@
+<div class="formCrm">
+  <div>
+    <div>
+      <p>Nome: <%= crm.name %></p>
+      <p>Whatsapp: <%= crm.whatsapp %></p>
+    </div>
+    <div class="actionButton">
+      <a class="btnEdit" href="/editCrm/<%= crm._id%>"><i class="bi bi-pencil-square"></i></a>
+      <a class="btnDel" href="/getById/<%= crm._id%>/delete"><i class="bi bi-trash3"></i></a>
+    </div>
+  </div>
+</div>

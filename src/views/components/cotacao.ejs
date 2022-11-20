@@ -1,0 +1,21 @@
+<section>
+  <div>
+    <form action="/crm/<%= crm._id %>/cotacao" method="POST">
+      <input type="text" name="produto" id="produto" placeholder="Produto" />
+      <input type="text" name="preco" id="preco" placeholder="Preço" />
+      <button type="submit">Adicionar</button>
+    </form>
+  </div>
+</section>
+<section>
+  <div>
+    <ul>
+      <% cotacaolist.forEach((cotacao) => { %>
+      <li>
+        <%= cotacao.produto %> | <%= cotacao.preco %> |
+        <a href="/crm/<%= cotacao._id %>/cotacao">Apagar</a>
+      </li>
+      <%}) %>
+    </ul>
+  </div>
+</section>

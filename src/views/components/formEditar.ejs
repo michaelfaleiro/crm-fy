@@ -1,0 +1,30 @@
+
+<form class="field" action="/updateCrm?_method=put" method="POST">
+  <div>
+    <label for="name"></label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      value="<%=crm.name %>"
+      placeholder="Nome do Cliente"
+    />
+  </div>
+
+  <div>
+    <label for="whatsapp"></label>
+    <input
+      type="text"
+      name="whatsapp"
+      id="whatsapp"
+      value="<%=crm.whatsapp%>"
+      placeholder="whatsapp"
+    />
+  </div>
+
+  <div>
+    <button class="button is-success is-small" type="submit">Atualizar</button>
+    <a class="btnCancelar" href="/">Cancelar</a>
+  </div>
+</form>
+    

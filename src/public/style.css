@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: .5em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    margin: 0.5em;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; 
+    gap: .5em;
+    flex-wrap: wrap;
+}
+
+.formCrm {
+    width: 16rem;
+    border: solid 1px black;
+    padding: .5rem;
+
+}
+
+.actionButton {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.btnEdit {
+    color: black;
+    font-size: 1.5rem;
+    padding: .3rem;
+    transition: 800ms ;
+}
+
+.btnEdit:hover {
+    background-color: blue;
+}
+
+.btnDel {
+    color: black;
+    font-size: 1.4rem;
+    padding: .3rem;
+    transition: 800ms;
+}
+
+.btnDel:hover {
+    background-color: brown;
+}
+
